@@ -7,6 +7,12 @@ print = main.querySelector(".data"),
 wIcon =print.querySelector("img"),
 arrowBack = main.querySelector("header i");
 
+document.addEventListener("dblclick",()=>{
+    document.documentElement.requestFullscreen().catch((e)=>{
+    console.log(e);
+    });
+    });
+
 let api;
 
 inputField.addEventListener("keyup", e =>{
